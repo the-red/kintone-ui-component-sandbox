@@ -1,9 +1,5 @@
-import { Dropdown } from 'kintone-ui-component'
+import { Dropdown, Table } from 'kintone-ui-component@next'
 import type { DetailEvent } from 'types'
-
-// NOTE: Kucはkintone自体にJSファイルをアップロード済み
-// @ts-expect-error
-const { Table } = window.Kuc
 
 kintone.events.on(['app.record.detail.show'], async (event: DetailEvent<any /* kintone.types.SavedXxxxFields */>) => {
   const body = kintone.app.record.getSpaceElement('space')!
