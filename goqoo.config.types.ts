@@ -3,9 +3,7 @@ import type { Config as _Config } from 'goqoo'
 export type Env = 'development' // | 'staging' | 'production'
 
 export type AppId = {
-  project: number // 案件管理
-  customer: number // 顧客管理
-  sales_activity: number // 活動履歴
+  app: number
 }
 
 export type Context = {
