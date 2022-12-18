@@ -3,7 +3,7 @@ import type { IndexEvent } from 'types'
 
 const renderLink = (recordId: number) => {
   const element = document.createElement('p')
-  element.innerHTML = `<a href="/k/4771/show#record=${recordId}">📄</a>`
+  element.innerHTML = `<a href="/k/${kintone.app.getId()}/show#record=${recordId}">📄</a>`
   return element
 }
 const renderItem = (cellData: string) => {
